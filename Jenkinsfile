@@ -16,6 +16,8 @@ pipeline {
             steps {
               bat "dir"
               powershell "New-Item -ItemType File Test.txt"
+              powershell "'Hello world' | Out-File -FilePath ./Test.txt"
+              powershell "Get-Content Test.txt"
               bat "dir"
             }
         }
