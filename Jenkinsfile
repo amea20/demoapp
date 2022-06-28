@@ -14,9 +14,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-              cmd "dir"
+              bat "dir"
               powershell "New-Item -ItemType File Test.txt"
-              cmd "dir"
+              bat "dir"
             }
         }
     }
