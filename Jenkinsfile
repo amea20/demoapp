@@ -4,7 +4,7 @@ pipeline {
             label 'Windows-Worker-1'
         }
     }
-//     triggers {
+//     triggers {ss
 //         pollSCM('* * * * 1-5')
 //     }
     options {
